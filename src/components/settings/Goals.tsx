@@ -1,0 +1,17 @@
+// Current goals, past goals, goal progress, goal tracking
+
+type Props = {
+  props: unknown;
+};
+
+/**
+ *
+ * @param {object} props Properties passed into the function
+ * @returns {function} JSX Function
+ */
+function Goals(props: Props): JSX.Element {
+  console.log(props);
+
+  return <div>Hello! {props ? <div>Props</div> : <div>No props</div>}</div>;
+}
+export default Goals;
