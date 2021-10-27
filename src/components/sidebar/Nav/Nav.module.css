@@ -1,0 +1,15 @@
+.listParent {
+  list-style: none;
+  padding-inline-start: 0px;
+
+  display: flex;
+  gap: 24px;
+  flex-direction: column;
+}
+
+.navParent {
+  border: 1px solid #94c2b048;
+  width: fit-content;
+  padding: 16px;
+  border-radius: 4px;
+}

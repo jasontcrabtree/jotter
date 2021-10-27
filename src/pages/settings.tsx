@@ -1,7 +1,4 @@
-// import { useState } from 'react';
-// import { themes } from '../components/utils/Theme/Themes';
-// import ToggleThemeButton from '../components/utils/Theme/ToggleThemeButton';
-// import ThemeButton from '../components/utils/Themes/ThemeButton';
+import Settings from '../components/settings/Settings';
 import prisma from '../lib/prisma';
 
 type Props = {
@@ -15,15 +12,11 @@ type Props = {
  * @returns {function} JSX Function
  */
 export default function Home(props: Props): JSX.Element {
-  // const [theme, setTheme] = useState(themes.lightMode);
-
   const data = props.authors[0];
 
   return (
     <main>
-      <h1>Hello {data.name}!</h1>
-      {/* <ToggleThemeButton toggle={toggleDark} /> */}
-      {/* <ThemeButton /> */}
+      <Settings props="Hey" />
     </main>
   );
 }

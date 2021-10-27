@@ -12,6 +12,11 @@ type Props = {
 function Gallery(props: Props): JSX.Element {
   console.log(props);
 
-  return <div>Hello! {props ? <div>Props</div> : <div>No props</div>}</div>;
+  return (
+    <>
+      <h2>Gallery</h2>
+      <p>Gallery of progress</p>
+    </>
+  );
 }
 export default Gallery;

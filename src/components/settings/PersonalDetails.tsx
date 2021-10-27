@@ -12,6 +12,11 @@ type Props = {
 function PersonalDetails(props: Props): JSX.Element {
   console.log(props);
 
-  return <div>Hello! {props ? <div>Props</div> : <div>No props</div>}</div>;
+  return (
+    <>
+      <h2>Personal Details</h2>
+      <p>Hello</p>
+    </>
+  );
 }
 export default PersonalDetails;

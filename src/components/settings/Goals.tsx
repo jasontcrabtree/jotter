@@ -12,6 +12,11 @@ type Props = {
 function Goals(props: Props): JSX.Element {
   console.log(props);
 
-  return <div>Hello! {props ? <div>Props</div> : <div>No props</div>}</div>;
+  return (
+    <>
+      <h2>Goals</h2>
+      <div>My goals</div>
+    </>
+  );
 }
 export default Goals;
