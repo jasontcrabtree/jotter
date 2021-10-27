@@ -1,5 +1,3 @@
-// import useTheme, { themes } from './ThemeContext';
-
 // // eslint-disable-next-line require-jsdoc
 // function ThemeButton(): JSX.Element {
 //   const { theme, setTheme } = useTheme();
