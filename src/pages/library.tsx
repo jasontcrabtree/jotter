@@ -1,7 +1,5 @@
-// import { useState } from 'react';
-// import { themes } from '../components/utils/Theme/Themes';
-import styles from '../styles/page-css-modules/homepage.module.css';
-import Records from '../components/log/Records';
+import Heading from '../components/elements/Heading/Heading';
+import Library from '../components/library/Library';
 import prisma from '../lib/prisma';
 
 type Props = {
@@ -14,15 +12,14 @@ type Props = {
  * @param {object} props Properties passed into the function
  * @returns {function} JSX Function
  */
-export default function Home(props: Props): JSX.Element {
-  // const [theme, setTheme] = useState(themes.lightMode);
-
+function LibraryPage(props: Props): JSX.Element {
   const data = props.authors[0];
-  // console.log(data);
+  console.log(data);
 
   return (
-    <main className={styles.homePageWrapper}>
-      <Records props="Records" />
+    <main>
+      <Heading text="Meals Library" size="h1" />
+      <Library />
     </main>
   );
 }
@@ -40,3 +37,5 @@ export const getServerSideProps = async (): Promise<{
     },
   };
 };
+
+export default LibraryPage;

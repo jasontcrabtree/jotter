@@ -12,6 +12,10 @@ type Props = {
 function Filter(props: Props): JSX.Element {
   console.log(props);
 
-  return <div>Hello! {props ? <div>Props</div> : <div>No props</div>}</div>;
+  return (
+    <div className="component-border">
+      <h3>Filter</h3>
+    </div>
+  );
 }
 export default Filter;

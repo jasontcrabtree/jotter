@@ -1,10 +1,8 @@
-// A list of all food records
-
 import Heading from '../elements/Heading/Heading';
-import DaysFoodRecord from './DaysFoodRecord';
+import MealLibrary from './MealLibrary';
 
 type Props = {
-  props: unknown;
+  props?: unknown;
 };
 
 /**
@@ -12,13 +10,14 @@ type Props = {
  * @param {object} props Properties passed into the function
  * @returns {function} JSX Function
  */
-export default function Records(props: Props): JSX.Element {
+export default function Library(props: Props): JSX.Element {
   // console.log(props);
 
   return (
     <>
       <Heading text="Records" size="h1" />
-      <DaysFoodRecord date={new Date()} />
+      {/* <DaysFoodRecord date={new Date()} /> */}
+      <MealLibrary date={new Date()} />
     </>
   );
 }

@@ -1,8 +1,8 @@
-// An indiviudal food record
-// Quantity
-// Meal time
-// Optional photo
-// Date*
+// An individual meal
+// Comprised of calories, macros (protein, fat, carbs)
+// Ingredients
+// Portion size
+// Photos
 
 type Props = {
   props: unknown;
@@ -13,9 +13,9 @@ type Props = {
  * @param {object} props Properties passed into the function
  * @returns {function} JSX Function
  */
-function FoodRecord(props: Props): JSX.Element {
+function MealLibraryEntry(props: Props): JSX.Element {
   console.log(props);
 
   return <div>Hello! {props ? <div>Props</div> : <div>No props</div>}</div>;
 }
-export default FoodRecord;
+export default MealLibraryEntry;

@@ -2,6 +2,7 @@ import Head from 'next/head';
 import type { AppProps } from 'next/app';
 import '../styles/reset.css';
 import '../styles/globals.css';
+import '../styles/utils.css';
 import Page from '../components/utils/Page';
 // import ThemeProvider from '../components/utils/Theme/ThemeProvider';
 // import { useContext, useState } from 'react';
@@ -26,7 +27,7 @@ function MyApp({ Component, pageProps }: AppProps): unknown {
   return (
     <>
       <Head>
-        <title>NextJS Base | Lodestone Studio</title>
+        <title>Jotter App</title>
         <link rel="shortcut icon" href="/Favicon.svg" />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>

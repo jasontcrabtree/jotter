@@ -1,0 +1,36 @@
+.mealCard {
+  width: 100%;
+  border: 1px solid lightgrey;
+  background-color: rgb(3, 43, 31);
+  background-color: white;
+  padding: 24px 16px;
+  border-radius: 8px;
+}
+
+.mealCard {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+}
+
+.mealInfo {
+}
+
+.mealCard {
+  margin-top: 16px;
+}
+
+.portionInfo {
+  font-style: italic;
+  color: slategray;
+  opacity: 0.85;
+  padding: 4px 0px;
+  max-width: 40ch;
+}
+
+.mealPhoto {
+  width: 320px;
+  height: 200px;
+  object-fit: contain;
+  border-radius: 8px;
+}

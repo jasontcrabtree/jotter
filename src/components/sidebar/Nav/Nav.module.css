@@ -4,12 +4,21 @@
 
   display: flex;
   gap: 24px;
-  flex-direction: column;
+  flex-direction: row;
 }
 
 .navParent {
-  border: 1px solid #94c2b048;
+  border: 1px solid rgb(224, 228, 233);
+  background-color: rgb(3, 31, 22);
+  background-color: rgb(247, 250, 255);
   width: fit-content;
-  padding: 16px;
+  padding: 72px 24px;
   border-radius: 4px;
+  height: fit-content;
+}
+
+@media screen and (min-width: 720px) {
+  .listParent {
+    flex-direction: column;
+  }
 }

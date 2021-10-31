@@ -1,0 +1,18 @@
+.card {
+  border: 1px solid rgb(157, 171, 192);
+  padding: 16px;
+  border-radius: 4px;
+}
+
+.mealsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
+  max-width: 50%;
+  gap: 8px;
+}
+
+.mealsGridItem {
+  border: 1px solid lightgrey;
+  border-radius: 4px;
+  padding: 8px;
+}

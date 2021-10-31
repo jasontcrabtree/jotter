@@ -17,6 +17,11 @@ function Nav(): JSX.Element {
           </Link>
         </li>
         <li>
+          <Link href="/library" passHref>
+            <a href="replace">Library</a>
+          </Link>
+        </li>
+        <li>
           <Link href="/settings" passHref>
             <a href="replace">Settings</a>
           </Link>

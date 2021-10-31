@@ -1,0 +1,11 @@
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.text-brand {
+  color: rgb(7, 97, 100);
+}
+
+.text-med {
+  font-weight: 600;
+}

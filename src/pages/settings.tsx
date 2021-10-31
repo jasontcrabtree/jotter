@@ -11,7 +11,7 @@ type Props = {
  * @param {object} props Properties passed into the function
  * @returns {function} JSX Function
  */
-export default function Home(props: Props): JSX.Element {
+function SettingsPage(props: Props): JSX.Element {
   const data = props.authors[0];
 
   return (
@@ -34,3 +34,5 @@ export const getServerSideProps = async (): Promise<{
     },
   };
 };
+
+export default SettingsPage;
